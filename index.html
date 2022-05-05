@@ -1,16 +1,20 @@
 <html>
-  <head >
+  <head>
     <title>サントリーフーズ沖縄株式会社</title>
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
     <div id="hedaer" class="inner">
-      <a href="/"><img src="image/logo.png"></a>
+      <a href="#"><img src="image/logo.png"></a>
+      <a href="javascript:document.getElementById('isspmenuopen').click();" id="spmenuopener" class="sp">
+        menuopen
+      </a>
     </div>
     <div id="menu" class="inner title backcolor">
-      <span>SUNTORY FOODS OKINAWA LIMITED</span>
-        <ul>
-          <li><a href="/">TOP</a></li>
+      <span class="pc">SUNTORY FOODS OKINAWA LIMITED</span>
+      <input type="checkbox" id="isspmenuopen" class="sp">
+      <ul id="slideupdown">
+          <li><a href="#">TOP</a></li>
           <li><a href="#company">会社案内</a></li>
           <li><a href="#business">事業内容</a></li>
           <li><a href="#group">グループ関連</a></li>
@@ -44,7 +48,7 @@
           <spen class="title">Recruit</spen>
           <spen>採用情報</spen>
           <div class="images">
-            <div><img src="image/02.jpg"></div>
+            <div><a href="https://www.suntoryfoods.co.jp/okinawa/recruit/index.html"><img src="image/02.jpg"></a></div>
           </div>
         </div>
         <div id="business" class="tile2">
@@ -53,12 +57,16 @@
           <p>サントリーフーズ沖縄株式会社は、飲料・食品等の販売をおこなっております。</p>
           <div class="images">
             <div>
-              <img src="image/03.jpg">
-              <spen class="subject">自動販売機事業</spen>
+              <a href="https://www.suntoryfoods.co.jp/okinawa/business/jihanki.html">
+                <img src="image/03.jpg">
+                <spen class="subject">自動販売機事業</spen>
+              </a>
             </div>
             <div>
-              <img src="image/04.jpg">
-              <spen class="subject">ファウンテン事業</spen>
+              <a href="https://www.suntoryfoods.co.jp/okinawa/business/fountain.html">
+                <img src="image/04.jpg">
+                <spen class="subject">ファウンテン事業</spen>
+              </a>
             </div>
           </div>
         </div>
@@ -66,35 +74,40 @@
           <spen class="title">Group</spen>
           <spen>グループ関連</spen>
           <div class="images">
-            <div><img src="image/05.jpg"></div>
+            <div><a href="https://www.suntory.co.jp/"><img src="image/05.jpg"></a></div>
           </div>
           <spen class="subject">サントリーグループ</spen>
           <div class="images">
             <div>
-              <img src="image/06.png">
-              <span class="backcolor">CSRビジョン</span>
+              <a href="https://www.suntory.co.jp/company/csr/">
+                <img src="image/06.png">
+                <span class="backcolor">CSRビジョン</span>
+              </a>
             </div>
             <div>
-              <img src="image/07.png">
-              <span class="backcolor">環境への取り組み</span>
+              <a href="https://www.suntory.co.jp/eco/">
+                <img src="image/07.png">
+                <span class="backcolor">環境への取り組み</span>
+              </a>
             </div>
             <div>
-              <img src="image/08.png">
-              <span class="backcolor">商品情報</span>
+              <a href="https://www.suntory.co.jp/softdrink/">
+                <img src="image/08.png">
+                <span class="backcolor">商品情報</span>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div id="footer">
-      <img src="image/pc_footer_logo.png">
+    <div id="footer" class="inner backcolor">
+      <div>
+        <img src="image/pc_footer_logo.png">
+      </div>
       <div id="map">
 				<ul>
 					<li>
-						<a href="https://www.suntoryfoods.co.jp/okinawa">TOPページ</a>
-						<ul>
-							<li><a href="https://www.suntoryfoods.co.jp/okinawa">TOPページ</a></li>
-						</ul>
+						<a href="#">TOPページ</a>
 					</li>
 				</ul>
 				<ul>
@@ -132,6 +145,9 @@
 						</ul>
 					</li>
 				</ul>
+			</div>
+      <div class="copyright">
+				Copyright © Suntory Foods Okinawa Limited. All right reserved.
 			</div>
   </div>
 </body>
